@@ -16,7 +16,6 @@ export default defineEventHandler(async (event) => {
 		source_lang: string;
 		target_lang: string;
 	}>(event);
-	console.log(body);
 	const data = await axios
 		.post<Response>("http://37.120.189.116:1188/translate", {
 			...body
@@ -28,6 +27,5 @@ export default defineEventHandler(async (event) => {
 		.catch((err) => {
 			return null;
 		});
-	console.log(data);
 	return data;
 });

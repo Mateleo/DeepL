@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import contenteditable from "vue-contenteditable";
 
-const text = ref("Je suis dans la jungle");
+const text = ref("");
 const testforApi = ref("");
 const counter = ref(0);
 const frToEn = ref(true);
